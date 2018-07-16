@@ -1,4 +1,5 @@
 class Student < ActiveRecord::Base
+  attr_accessor :active
 
    def after_initialize
      self.active = false
@@ -8,6 +9,4 @@ class Student < ActiveRecord::Base
     self.first_name + " " + self.last_name
   end
 
-  def active=
-  end
 end
