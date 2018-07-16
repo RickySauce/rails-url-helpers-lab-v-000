@@ -1,8 +1,8 @@
 class Student < ActiveRecord::Base
   attr_accessor :active
 
-  def initialize(@active = false)
-
+  def initialize(active = false)
+    @active = active
   end
 
   def to_s
