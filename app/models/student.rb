@@ -1,7 +1,7 @@
 class Student < ActiveRecord::Base
   attr_accessor :active
 
-  def initialize 
+  def initialize
     @active = false
   end
 
